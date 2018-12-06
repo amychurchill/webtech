@@ -1,0 +1,240 @@
+body{
+	background: white;
+	font-size: 11pt;
+	color: black;
+	font-family: Microsoft JhengHei UI Light;
+	overflow: hidden; /* anything that cannot fit onto the screen will not be seen */
+}
+
+ul {
+    list-style-type: none; /* no symbols will appear near the items in the list */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left; /* each element of the navigation bar list is aligned along the leftside */
+}
+
+li a {
+    display: block; /* element will start on a new line and take up the full width */
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /* vertical padding is 14px and horizontal padding is 16px */
+    text-decoration: none; /* text will be plain, without decoration */
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+h1{
+	padding-top: 2%;
+	font-size: 30pt;
+}
+
+h2{
+	font-size: 22pt;
+}
+
+h3{
+	font-size: 16pt;
+}
+
+canvas{
+	padding-right: 1%;
+}
+
+input{
+	margin: 2%;
+}
+
+select{
+	margin: 2%;
+}
+
+table{
+	position: absolute; /* positioned relative to its ancestor element */
+	left: 45%;
+	top: 25%;
+	border-collapse: collapse; /* the borders will connect to form one single line */
+}
+
+td{
+	padding: 5px;
+}
+
+table td {
+  border: 5px solid yellow; 
+}
+
+/* removing the outer lines of the border */
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+* {box-sizing: border-box}
+
+input[type=submit], button[type=reset]{
+	height: 25px;
+	width: 80px;
+	border-radius: 8px;
+	background: black;
+	color: white;
+	font-family: Microsoft JhengHei UI Light;
+}
+
+.navbar{
+	position:fixed; /* fix position at top left corner of browser window */
+	top:0;
+	left:0;
+	width: 100%;
+}
+
+.mySlides {
+	display: none; /* will not be seen */
+}
+
+.slide {
+	position: relative; /* positioned relative to its normal position */
+	vertical-align: middle;
+	height: 350px;
+	width: 90%;
+	padding-left: 15%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	padding-top: -3%;
+	max-width: 1000px;
+	margin: auto; /* browser will calculate margin */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px; 
+  margin: 0 2px; /* vertical margin is 0 and horizontal margin is 2px */
+  background-color: #bbb;
+  border-radius: 50%; /* rounds the edges, making circular symbols */
+  display: inline-block; /* top and bottom paddings and margins are respected */
+  transition: background-color 0.6s ease; /* transitions with ease */
+}
+
+/* when dot is hovered over, its background color becomes #717171 */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.car{
+	height: 150px;
+	width: 120px;
+}
+
+.contact {
+	height: 40px;
+	padding: 8px 14px;
+	background: black; 
+    color: white;
+	font-family: Microsoft JhengHei UI Light;
+	font-size: 12pt;
+    border: none;
+    border-radius: 18px; /* rounding the corners */
+}
+
+/* when user hovers over button, the background will become white, and the button will have black borders */
+.contact:hover {
+	height: 40px;
+	padding: 8px 14px;
+    background: white;
+    color: black;
+	font-family: Microsoft JhengHei UI Light;
+	font-size: 12pt;
+    border: 2px solid black;
+    border-radius: 18px;
+}
+
+/* before the user clicks on the buttons, the images will be invisible */
+.staff{
+	height: 0;
+	width: 0;
+}
+
+#welcome{
+	padding-top: 2.5%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+#about{
+	font-size: 14pt;
+}
+
+#car{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 300px;
+	width: 100%;
+}
+
+#buttons{
+	position: absolute;
+	top: 15%;
+	left: 38%;
+}
+
+#form{
+	background: #D0DBE3;
+}
+
+#order{
+	position: fixed;
+	top: 6.5%;
+	left: 0%;
+	height: 100%;
+	width: 30%;
+	font-size: 11pt;
+	padding-top: 0%;
+	padding-left: 5%;
+	background: white;
+}
+
+#output{
+	position: absolute;
+	left: 30.8%;
+	top: 80%;
+}
