@@ -3,7 +3,7 @@
          $dbuser = 'root';
          $dbpass = '';
          $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
-   
+   echo"test";
          if(! $conn ){
             die('Could not connect: ' . mysqli_error());
          }
