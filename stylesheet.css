@@ -1,0 +1,44 @@
+input{
+	padding: 5px;
+	border-radius: 5px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#login{
+	position: absolute;
+	color: white;
+	margin-top: -400px;
+	margin-left: 30px;
+
+}
+
+#quizlink{
+	color: white;
+	margin-top: -50px;
+	margin-left: 1000px;
+	font-size: 30px;
+}
+
+#background{
+	background-image: url("vans1.jpeg");
+    height: 60%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background2{
+	background-image: url("vans2.jpeg");
+    height: 60%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#shoe1{
+    background-image: url('vsco1.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
+}
