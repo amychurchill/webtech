@@ -145,4 +145,9 @@ Gucci: $gscore%<br>
 Vans: $vscore%<br>
 UGG: $uscore%<br>
 Nike: $nscore%";
+
+mysqli_select_db($conn, 'shu');
+$sql = "UPDATE accounts
+SET gscore = '$gscore', vscore ='$vscore', uscore = '$uscore', nscore = '$nscore'
+WHERE user = $_SESSION['username']";
 ?>
