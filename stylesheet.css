@@ -1,44 +1,92 @@
+
 input{
-	padding: 5px;
-	border-radius: 5px;
-	background-color: white;
-	border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
 }
 
-#login{
-	position: absolute;
-	color: white;
-	margin-top: -400px;
-	margin-left: 30px;
-
+ul {
+    list-style-type: none; /* no symbols will appear near the items in the list */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: inline-block;
 }
 
-#quizlink{
-	color: white;
-	margin-top: -50px;
-	margin-left: 1000px;
-	font-size: 30px;
+li {
+    float: left; /* each element of the navigation bar list is aligned along the leftside */
 }
 
-#background{
-	background-image: url("vans1.jpeg");
-    height: 60%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+li a {
+    display: block; /* element will start on a new line and take up the full width */
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /* vertical padding is 14px and horizontal padding is 16px */
+    text-decoration: none; /* text will be plain, without decoration */
 }
 
-#background2{
-	background-image: url("vans2.jpeg");
-    height: 60%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+li a:hover:not(.active) {
+    background-color: #111;
 }
 
-#shoe1{
-    background-image: url('vsco1.jpg');
-    background-repeat: no-repeat;
-    background-size: 50% 100%;
+.navbar{
+    position:fixed; /* fix position at top left corner of browser window */
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: #333;
 }
+#nav{
+    text-align: center;
+}
+
+#pos{
+    margin-top: 100px;
+}
+
+.home{
+     width: 33.33%;
+}
+
+#down{
+    margin-top: 75px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+float:left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#cont{
+    margin-top: -200px;
+}
+
+a:link,a:visited,a:hover,a:active {
+    color:#CFB53E;
+    text-decoration: none;
+}
+
+#lower{
+    margin-top: -230px;
+}
+
+#up{
+    margin-top: -200px;
+}
+
+#upp{
+    margin-top: -170px;
 }
