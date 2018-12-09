@@ -1,11 +1,19 @@
 <?php
-   include("config.php");
-   session_start();
+
+    include("config.php");
+
+	session_start();
       
-      $myusername = mysqli_real_escape_string($conn,$_POST['user']);
-      $mypassword = mysqli_real_escape_string($conn,$_POST['pass']); 
+
+    $myusername = mysqli_real_escape_string($conn,$_POST['user']);
+    $mypassword = mysqli_real_escape_string($conn,$_POST['pass']); 
       
-      $sql = "SELECT * FROM user WHERE username = '$myusername' and password = '$mypassword'";
+    $sql = "SELECT * FROM user WHERE username = '$myusername' and password = '$mypassword'";
+    /*$result = mysqli_query($conn, $sql);
+	while($row = mysqli_fetch_assoc($result)) {
+               echo $row["username"];
+           }*/
+
       $result = mysqli_query($conn,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
@@ -22,5 +30,4 @@
          $error = "Your Login Name or Password is invalid";
       }
    
-	
 ?>

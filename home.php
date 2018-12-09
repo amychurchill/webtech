@@ -23,6 +23,7 @@
 <!--creating navigation bar, from w3schools.com-->
 <div class="navbar">
 	<ul>
+		<li><a href="home.php">Shu</a></li>
 		<li><a href="login.php">Log In</a></li>
 		<li><a href="register.php">Register</a></li>
 		<li><a href="catalog.html">Catalog</a></li>
@@ -34,9 +35,23 @@
 </head>
 <body>
 
-	<!--- CONTENT--->
+	<div id="cont">
+<p>Shu</p>
+<h1><div id="link"><a href="catalog.html">Shop now</a> | <a href="quiz.php">Take Quiz</a> | <a href="login.php">Login</a> </div></h1>
 
+<div class="row">
+  <div class="column">
+    <img src="vsco4.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="vsco1.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="vsco3.jpg" style="width:100%">
+  </div>
+</div>
 
+</div>
 	<!--- CONTENT END --->
 </body>
 </html>
