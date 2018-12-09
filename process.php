@@ -47,17 +47,22 @@ $phone = $_POST["phone"];
 $user = $_POST["user"];
 $pass = $_POST["pass"];
 
+$frequency = 0;
 $sql = 'SELECT * FROM accounts';
 $result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result);
-if ($row["user"] == $user) {
-   echo "<p>Great username, but it's already been snatched! Please <a href = 'register.php'>register again</a> with a different username.</p>";
+while ($row = mysqli_fetch_assoc($result)) {
+	if ($row["user"] == $user) {
+	   $frequency += 1;
+	}
 }
-else {
+
+if ($frequency == 0) {
 	$sql = "INSERT INTO accounts 
 	VALUES ('$name', '$email', '$phone', '$user', '$pass', NULL, NULL, NULL, NULL)";
 	mysqli_query($conn, $sql);
 	echo "<p>Congratulations! You have successfully created an account.</p>";
+} else {
+	echo "<p>Great username, but I'm afraid it has already been snatched! Try to <a href = 'register.php'>register again</a> using a different username.</p>";
 }
 ?>
 <body>
