@@ -70,6 +70,31 @@ float:left;
     display: table;
 }
 
+.catalog{             /* I arrange my catalog items in a table */
+    position: absolute;
+    top: 75px;
+    border-collapse:collapse /* use a single border between cells */
+}	
+
+.catalog td{
+    text-align:center;       /* center horizontally in each cell */
+    padding:80px;            /* 20px padding all around */
+}
+
+/* I use a CSS transform to zoom into the images when the mouse hovers over it
+   and also a CSS transition so this does not happen immediately but smoothly
+   over 2s.  This was copied from w3 schools */
+.catalog img{
+    height:250px; /* Dr. Pandya told me to do this in order to make all my photos the same height */
+    transition: transform 2s;/* transition styling to make zooming smooth */
+}
+
+.catalog img:hover{
+    -ms-transform: scale(1.5);     /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2.0);         /* zooms into picture by 2x when hovering */
+}
+
 #cont{
     margin-top: -200px;
 }
